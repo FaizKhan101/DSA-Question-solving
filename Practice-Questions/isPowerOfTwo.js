@@ -24,15 +24,14 @@
 // Output: true
 // Explanation: 24 = 16
 
-
-// Solution 
+// Solution
 
 function isPowerOfTwo(n) {
-    for ( let i =0; i <= n/2; i++) {
-        if (2**i > n);
-        if (2**i === n) return true
-    }
-    return false
+  for (let i = 0; i <= n / 2; i++) {
+    if (2 ** i > n);
+    if (2 ** i === n) return true;
+  }
+  return false;
 }
 
 console.log(isPowerOfTwo(16)); // true
