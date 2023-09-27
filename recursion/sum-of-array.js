@@ -6,8 +6,6 @@ function sumOfArray(arr) {
     arr.pop()
     return lastElement + sumOfArray(arr)
 }
-
 let result = sumOfArray([1,2,3,4,5])
 console.log(result);
-
 // ...5 + 4 + 3 + 2 + 1 + 0
