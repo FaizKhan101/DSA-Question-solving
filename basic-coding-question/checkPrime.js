@@ -9,3 +9,5 @@ function checkPrime(num) {
   }
   return "Prime";
 }
+
+console.log(checkPrime(4));
