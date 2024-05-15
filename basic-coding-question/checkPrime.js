@@ -2,7 +2,6 @@
 
 function checkPrime(num) {
   for (let i = 2; i < num; i++) {
-    console.log(i);
     if (num % i === 0) {
       return "Not Prime";
     }
@@ -10,4 +9,4 @@ function checkPrime(num) {
   return "Prime";
 }
 
-console.log(checkPrime(4));
+console.log(checkPrime(5));

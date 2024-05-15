@@ -1,4 +1,5 @@
 // Write a function for findind fibonacci number.
+// example: 1, 1, 2, 3, 5, 8, 13...
 
 function fibonacci(num) {
   if (num === 0) return 0;
@@ -7,15 +8,14 @@ function fibonacci(num) {
 } 
 
 // just return final number
-console.log(fibonacci(20));
+console.log(fibonacci(5));
 
 // for complete list of fibonacci
-// let target = 20;
-// let fibArray = [];
-// for (let i = 0; i <= target; i++) {
-//   fibArray.push(fibonacci(i));
-// }
+let target = 20;
+let fibArray = [];
+for (let i = 0; i <= target; i++) {
+  fibArray.push(fibonacci(i));
+}
 
-// console.log(fibArray);
-
+console.log(fibArray);
 // 0,1,1,2,3,5,8,13...

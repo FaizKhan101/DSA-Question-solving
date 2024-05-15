@@ -35,3 +35,7 @@ function isPowerOfTwo(n) {
 }
 
 console.log(isPowerOfTwo(16)); // true
+
+if ( 2 & (2 - 1) ) {
+  console.log("hello");
+}

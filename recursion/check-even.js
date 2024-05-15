@@ -6,7 +6,6 @@ function checkEven(arr) {
     // if (arr[0] % 2 === 0) {
     //     return arr[0]
     // }
-
     // arr.shift()
 
     // start from last element of the array
@@ -17,14 +16,13 @@ function checkEven(arr) {
     return checkEven(arr)
 }
 
-const arr = [13,2,23,54,45,43,56,34,12,423,10, 545]
+const arr = [13, 2, 23, 54, 45, 43, 56, 34,12, 423, 545];
 
 // simple for loop to find even number
-for (const i of arr) {
-    if (i % 2 === 0) {
-        console.log(i);
-        break
-    }
-}
+// for (const i of arr) {
 
-console.log(checkEven(arr));
+//     if (i % 2 === 0) {
+//     console.log(i);
+//     break
+// }
+// }
