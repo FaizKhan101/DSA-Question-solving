@@ -14,12 +14,14 @@ console.log(sumOfN(5));
 
 // Easy recursion solution
 function sumOfNRecursion(num) {
-  let result = 0;
-  if (num === 0) {
-    return result;
-  }
+  // let result = 0;
+  // if (num === 0) {
+  //   return result;
+  // }
+
+  if (num === 1) return 1;
+
   return num + sumOfNRecursion(num - 1);
 }
 
 console.log(sumOfNRecursion(8));
-
