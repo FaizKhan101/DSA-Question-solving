@@ -1,30 +1,43 @@
-// Given a binary array nums, return the maximum number of consecutive 1's in the array.
+// // const factorial = (n) => (n <= 1 ? 1 : n * factorial(n - 1));
 
-// Example 1:
+// // function isStrong(num) {
+// //   let arrOfNum = String(num).split("");
 
-// Input: nums = [1,1,0,1,1,1]
-// Output: 3
-// Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.
-// Example 2:
+// //   const factorial = (n) => (n === 1 || n === 0 ? 1 : n * factorial(n - 1));
 
-// Input: nums = [1,0,1,1,0,1]
-// Output: 2
+// //   let totalOfFactotial = 0;
 
-// var findMaxConsecutiveOnes = function (nums) {
-//   let max = 0;
-//   let countConsecutive = 0;
+// //   for (let i of arrOfNum) {
+// //     totalOfFactotial += factorial(+i);
+// //   }
+// //   if (num === totalOfFactotial) {
+// //     return "Number is strong.";
+// //   }
+// //   return "Number is not strong";
+// // }
+// // console.log(isStrong(40585));
 
-//   for (const value of nums) {
-//     countConsecutive += value;
-//     if (countConsecutive > max) {
-//       max = countConsecutive;
+// function isStrong(num) {
+//     const arrOfNum = String(num).split("");
+
+//     const factorial = (n) => (n === 0 || n === 1 ? 1 : n * factorial(n - 1));
+//     let sumOfFac = 0;
+//     for (let i of arrOfNum) {
+//       sumOfFac += factorial(+i);
 //     }
-//     if (value === 0) {
-//       countConsecutive = 0;
+//     if (sumOfFac === num) {
+//       return "Number is strong.";
 //     }
+//     return "Number is not string.";
 //   }
-//   return max;
-// };
 
-// console.log(findMaxConsecutiveOnes([1,1,0,0,0,1,,1,3,3,1,4]));
+//   console.log(isStrong(145));
 
+function isStrong(num) {
+  const factorial = (n) => (n <= 1 ? 1 : n * factorial(n - 1));
+  const sumOfFac = String(num).split("")
+    .reduce((sum, digit) => sum + factorial(+digit), 0);
+  return sumOfFac === num;
+}
+
+console.log(isStrong(145) ? "Number is strong." : "Number is not strong.");
