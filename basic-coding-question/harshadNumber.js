@@ -10,4 +10,4 @@ const isHarshadNumber = (num) => {
   return num % sum === 0;
 };
 
-console.log(isHarshadNumber(21));
+console.log(isHarshadNumber());
